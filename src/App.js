@@ -1,38 +1,24 @@
+import { CategoryContainer } from './components';
+
+const categories = [
+  {
+    id: '1',
+    title: 'Laptops',
+    image: '/images/laptop-cat.jpg',
+  },
+  {
+    id: '2',
+    title: 'Gaming',
+    image: '/images/gamers-cat.jpg',
+  },
+  { id: '3', title: 'Components', image: '/images/components-cat.jpg' },
+  { id: '4', title: 'Smartphones', image: '/images/smartphone-cat.jpg' },
+  { id: '5', title: 'TV', image: '/images/tv-cat.jpg' },
+  { id: '6', title: 'Accessories', image: '/images/accessories-cat.jpg' },
+];
+
 const App = () => {
-  return (
-    <div className='categories-container'>
-      <div className='category-container'>
-        <div className='category-body'>
-          <h2>laptops and computers</h2>
-          <p>Show now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        <div className='category-body'>
-          <h2>gaming and streaming</h2>
-          <p>Show now</p>
-        </div>
-      </div>{' '}
-      <div className='category-container'>
-        <div className='category-body'>
-          <h2>computer components</h2>
-          <p>Show now</p>
-        </div>
-      </div>{' '}
-      <div className='category-container'>
-        <div className='category-body'>
-          <h2>smartphones</h2>
-          <p>Show now</p>
-        </div>
-      </div>{' '}
-      <div className='category-container'>
-        <div className='category-body'>
-          <h2>accessories</h2>
-          <p>Show now</p>
-        </div>
-      </div>
-    </div>
-  );
+  return <CategoryContainer categories={categories} />;
 };
 
 export default App;
