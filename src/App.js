@@ -1,24 +1,12 @@
-import { CategoryContainer } from './components';
-
-const categories = [
-  {
-    id: '1',
-    title: 'Laptops',
-    image: '/images/laptop-cat.jpg',
-  },
-  {
-    id: '2',
-    title: 'Gaming',
-    image: '/images/gamers-cat.jpg',
-  },
-  { id: '3', title: 'Components', image: '/images/components-cat.jpg' },
-  { id: '4', title: 'Smartphones', image: '/images/smartphone-cat.jpg' },
-  { id: '5', title: 'TV', image: '/images/tv-cat.jpg' },
-  { id: '6', title: 'Accessories', image: '/images/accessories-cat.jpg' },
-];
+import { Routes, Route } from 'react-router-dom';
+import { HomePage } from './pages';
 
 const App = () => {
-  return <CategoryContainer categories={categories} />;
+  return (
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+    </Routes>
+  );
 };
 
 export default App;
