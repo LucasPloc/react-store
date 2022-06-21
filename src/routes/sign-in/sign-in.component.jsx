@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { SignUpForm } from '../../components';
+
 import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
@@ -12,6 +15,7 @@ const SignInPage = () => {
     <div>
       <h1>sign in</h1>
       <button onClick={logGoogleUser}>sign in wit google</button>
+      <SignUpForm />
     </div>
   );
 };
