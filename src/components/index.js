@@ -3,3 +3,4 @@ export { default as CategoryContainer } from './categories-container/categories-
 export { default as SignUpForm } from './sign-up-form/sign-up-form.component';
 export { default as FormInput } from './form-input/form-input.component';
 export { default as Button } from './button/button.component';
+export { default as SignInForm } from './sign-in-form/sign-in-form.component';
